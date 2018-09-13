@@ -1,0 +1,45 @@
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">BEEN LOVE BEERS</a>
+      </div>
+      <ul class="nav navbar-nav" >
+        <li ><a href="#">HOME</a></li>
+        <li ><a href="#">FAVOURITE</a></li>
+      </ul>
+      <!-- <form class="navbar-form navbar-left" >
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+    </div>
+  </nav>
+
+    <div class="row example-cards ">
+<mat-card class="example-card" *ngFor="let j of this.ans" >
+    <div class="row example-cards ">
+ 
+  <div class="col-sm-6">
+  <mat-card-header>
+    <mat-card-title><strong>{{j.name}}</strong></mat-card-title>
+  </mat-card-header>
+  </div>
+  <div class="col-sm-6" >
+  <img mat-card-image src="{{j.image_url}}" style="width:90px;height:100px;">
+  </div>
+    </div>
+  <br>
+  <mat-card-content style="width:350px;">
+    <p>
+    {{j.description}}
+    </p>
+  </mat-card-content>
+
+</mat-card>
+</div>
+
+
+<button (click)="fun()">click</button>
+<router-outlet></router-outlet>

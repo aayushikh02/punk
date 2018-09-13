@@ -1,0 +1,27 @@
+.example-card {
+    max-width: 450px;
+    display: inline-block;
+    height: 400px !important;
+    margin:53px !important;
+
+  }
+
+  .navbar-default{
+    background-color: aqua;
+  }
+  .navbar-brand{
+    color: white;
+  }
+  .navbar-nav {
+   flex-direction: row !important;
+   
+  }
+  .navbar-nav li a{
+    margin-left:50px;
+    color: white !important;
+  }
+  .navbar-left{
+    display:inline-block !important;
+  }
+
+ 
